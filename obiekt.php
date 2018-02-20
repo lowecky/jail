@@ -44,11 +44,11 @@
 <!-- <div class="zadyma">
       <img src="logo.png">
 
-</div> -->
+</div>
 
 <div class="obiekt">
     <img src="obiekt.jpg">
-</div>
+</div> -->
 
 </body>
 </html>
