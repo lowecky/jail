@@ -1,0 +1,36 @@
+body{
+   background-image: url("bcgbcg.jpg");
+
+width: 100%;
+height: 100%;
+/*background-color:#112233;*/
+}
+
+.zadyma{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zadyma img {
+  width: 10%;
+  height: 10%;
+  fill: black;
+}
+.obiekt{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.obiekt img {
+  width: 50%;
+  height: 50%;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+}
