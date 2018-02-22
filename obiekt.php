@@ -40,15 +40,44 @@
           </ul>
       </div>
   </nav>
+  <div class="container">
+    <div class="mx-auto">
+  <form action="/action_page.php">
+  <select name="blok">
+    <option value="BA">Blok A</option>
+    <option value="BB">Blok B</option>
+  </select>
+  <select name="sekcja">
+    <option value="north">Północna</option>
+    <option value="east">Wschodnia</option>
+    <option value="south">Południe</option>
+    <option value="west">Zachód</option>
+  </select>
+  <select name="cela">
+    <option value="pierwsza">Cela 1</option>
+    <option value="druga">Cela 2</option>
+    <option value="trzecia">Cela 3</option>
+    <option value="czwarta">Cela 4</option>
+    <option value="piata">Cela 5</option>
+    <option value="szosta">Cela 6</option>
+    <option value="siodma">Cela 7</option>
+    <option value="osma">Cela 8</option>
+    <option value="dziewiata">Cela 9</option>
+    <option value="dziesiata">Cela 10</option>
+  </select>
+  <input type="submit">
+</form>
+</div>
+</div>
 
 <!-- <div class="zadyma">
       <img src="logo.png">
 
 </div> -->
 
-<div class="obiekt">
+<!-- <div class="obiekt">
     <img src="obiekt.jpg">
-</div>
+</div> -->
 
 </body>
 </html>
