@@ -69,8 +69,6 @@
     // endif;
     //
     // $conn = null;
-
-
 ?>
 
 <!doctype html>
@@ -130,7 +128,6 @@
       <?php
     }
       ?>
-
-
+      
 </body>
 </html>
