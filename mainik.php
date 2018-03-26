@@ -46,9 +46,6 @@ if(isset($_POST['search'])){
 
 <html lang="en">
 <head>
-  <?php
-   //echo "   ".$_POST['login'];
-   ?>
   <meta charset="utf-8">
   <link rel="Shortcut icon" href="https://image.ibb.co/nG90QG/logo.png" />
   <title>Strona Główna</title>
@@ -85,7 +82,10 @@ if(isset($_POST['search'])){
                   <a class="nav1 nav-link">Witaj:   <?php
                     echo $_SESSION['nazwa'];
                     ?></a>
-            </li>
+                    </li>
+                    <li>
+            <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
+                    </li>
           </ul>
       </div>
   </nav>

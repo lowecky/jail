@@ -90,9 +90,10 @@ if(isset($_POST['cela'])){
                     <a class="nav1 nav-link">Witaj:   <?php
                       session_start();
                       echo $_SESSION['nazwa'];
-
-                      ?>
-                    </a>
+                      ?></a>
+                      <li>
+              <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
+                      </li>
               </li>
           </ul>
       </div>
@@ -184,7 +185,7 @@ if (isset($records)) {
 <!-- <div class="zadyma">
       <img src="logo.png">
 
-</div> -->
+</div>
 
 <!-- <div class="obiekt">
     <img src="obiekt.jpg">

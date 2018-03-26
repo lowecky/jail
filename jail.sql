@@ -6,6 +6,7 @@
 -- Generation Time: Mar 26, 2018 at 08:58 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
+=======
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +26,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pracownicy`
+-- Struktura tabeli dla tabeli `pracownicy`
 --
 
 CREATE TABLE `pracownicy` (
@@ -39,7 +40,7 @@ CREATE TABLE `pracownicy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pracownicy`
+-- Zrzut danych tabeli `pracownicy`
 --
 
 INSERT INTO `pracownicy` (`ID_Pracownika`, `Imie`, `Nazwisko`, `Adres`, `Pozycja`, `Blok`, `Sekcja`) VALUES
@@ -49,7 +50,7 @@ INSERT INTO `pracownicy` (`ID_Pracownika`, `Imie`, `Nazwisko`, `Adres`, `Pozycja
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktura tabeli dla tabeli `users`
 --
 
 CREATE TABLE `users` (
@@ -99,6 +100,19 @@ INSERT INTO `wiezien` (`ID_Więźnia`, `imie`, `nazwisko`, `wiek`, `wyrok`, `Adr
 -- Indexes for dumped tables
 --
 
+
+INSERT INTO `wiezien` (`ID_Więźnia`, `imie`, `nazwisko`, `wiek`, `wyrok`, `Adres`, `Miasto`) VALUES
+(1, 'krzysztof', 'kowalski', 26, 'rozprowadzanie narkotyków', 'wejhera 17', 'gdańsk'),
+(2, 'zdziszek', 'kowalski', 15, 'chlanie w miejscu publicz', 'elówka 2', 'poznań'),
+(3, 'zdziszek', 'dymek', 18, 'przemyt narkotykow', 'alana 1', 'poznań'),
+(4, 'alan', 'dymek', 20, 'rozprowadzanie narkotyków', 'alana 1', 'poznań'),
+(5, 'marek', 'polonski', 36, 'gwałt', 'polana 20', 'warszawa'),
+(6, 'adam', 'mickiewicz', 23, 'porwanie dziecka', 'buk 20', 'bydgoszcz');
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
 --
 -- Indexes for table `pracownicy`
 --
@@ -116,17 +130,15 @@ ALTER TABLE `wiezien`
 --
 
 --
--- AUTO_INCREMENT for table `pracownicy`
+-- AUTO_INCREMENT dla tabeli `pracownicy`
 --
 ALTER TABLE `pracownicy`
   MODIFY `ID_Pracownika` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
--- AUTO_INCREMENT for table `wiezien`
+-- AUTO_INCREMENT dla tabeli `wiezien`
 --
 ALTER TABLE `wiezien`
-  MODIFY `ID_Więźnia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-COMMIT;
+  MODIFY `ID_Więźnia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -45,6 +45,9 @@
                     session_start();
                       echo $_SESSION['nazwa'];
                       ?></a>
+                      <li>
+              <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
+                      </li>
                     </div>
               </li>
           </ul>
