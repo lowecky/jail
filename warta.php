@@ -36,6 +36,9 @@
               <li class="nav-item active">
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+              </li>
               <div class="xD">
               <li class="nav-item">
                     <a class="nav1 nav-link">Witaj:   <?php

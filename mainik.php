@@ -78,6 +78,9 @@ if(isset($_POST['search'])){
               <li class="nav-item">
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+              </li>
             <li class="nav-item">
                   <a class="nav1 nav-link">Witaj:   <?php
                     echo $_SESSION['nazwa'];
@@ -123,7 +126,7 @@ if(isset($_POST['search'])){
           echo'<div class="card-body text-center">';
 
             echo'<h4 class="card-title">'.'<strong>'. $results['imie'] . ' ' . $results['nazwisko'] .'</strong>'.'</h4>';
-            echo'<h5>' . 'wiek: ' .  $results['wiek'] .  '</h5>';
+            echo'<h5>' . 'wiek: ' .  $results['wiek'] . '</h5>';
 
             echo  '<p class="card-text">' . '<strong>' . 'wyrok: ' . '</strong>' . $results['wyrok'] . '</p>';
 

@@ -40,6 +40,9 @@
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
               <li class="nav-item">
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+              </li>
+              <li class="nav-item">
                     <a class="nav1 nav-link">Witaj:   <?php
                     session_start();
                       echo $_SESSION['nazwa'];
@@ -73,6 +76,9 @@
    $wyrok = $_POST['wyrok'];
    $adres = $_POST['adres'];
    $city = $_POST['city'];
+   $blok = $_POST['blok'];
+   $sekcja = $_POST['sekcja'];
+   $cela = $_POST['cela'];
 
 
    if($imie == ''){ $error[] = "Wprowadź Imie <br>"; }
@@ -81,16 +87,21 @@
    if($wyrok == ''){ $error[] = "Wprowadź Wyrok <br>"; }
    if($adres == ''){ $error[] = "Wprowadź Adres <br>"; }
    if($city == ''){ $error[] = "Wprowadź Miejscowość"; }
+   if($blok == ''){ $error[] = "Wprowadź cela blok"; }
+   if($sekcja == ''){ $error[] = "Wprowadź sekcja"; }
+   if($cela == ''){ $error[] = "Wprowadź cela numer"; }
 
   }
 
 
       if(!empty($_POST['imie']) && !empty($_POST['nazwisko'])
       && !empty($_POST['wiek']) && !empty($_POST['wyrok'])
-      && !empty($_POST['adres']) && !empty($_POST['city'])){
+      && !empty($_POST['adres']) && !empty($_POST['city'])
+      && !empty($_POST['blok']) && !empty($_POST['sekcja'])
+      && !empty($_POST['cela'])){
 
-          $sql = "INSERT INTO wiezien (imie, nazwisko, wiek, wyrok, adres, miasto)
-                  VALUES ('$imie' , '$nazwisko' , '$wiek' , '$wyrok' , '$adres' , '$city')";
+          $sql = "INSERT INTO wiezien (imie, nazwisko, wiek, wyrok, adres, miasto, Blok, Sekcja, Cela)
+                  VALUES ('$imie' , '$nazwisko' , '$wiek' , '$wyrok' , '$adres' , '$city' , '$blok' , '$sekcja' , '$cela')";
           $records = $DB_con->prepare($sql);
           $records->execute();
   }
@@ -114,6 +125,18 @@
             <label for="inputPassword4">Wiek</label>
             <input type="text" class="form-control" id="inputPassword4" name="wiek" placeholder="Wiek">
           </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Blok</label>
+            <input type="text" class="form-control" id="inputEmail4" name="blok" placeholder="Blok">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Sekcja</label>
+            <input type="text" class="form-control" id="inputEmail4" name="sekcja" placeholder="Sekcja">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Cela</label>
+            <input type="text" class="form-control" id="inputEmail4" name="cela" placeholder="Cela">
+          </div>
         </div>
         <div class="form-group">
           <label for="inputAddress">Wyrok</label>
@@ -123,6 +146,7 @@
           <label for="inputAddress2">Adres</label>
           <input type="text" class="form-control" id="inputAddress2" name="adres" placeholder="Adres">
         </div>
+
         <div class="form-group">
 
           <div class="row justify-content-start">
