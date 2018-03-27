@@ -1,0 +1,61 @@
+body{
+ background-image: url("bcgbcg2.jpg");
+ /*background-position: center;
+background-size: cover;
+ background-repeat: no-repeat;*/
+width: 100%;
+height: 100%;
+background-color:#112233;
+}
+
+.zadyma{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zadyma img {
+  width: 10%;
+  height: 10%;
+  fill: black;
+}
+.sztos {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-top: 100px;
+}
+.dym {
+
+  height: 400px;
+  width: 600px;
+  margin-top: 100px;
+
+}
+
+.alert {
+  color: #fff;
+  text-align: center;
+  border: 3px;
+  border-style: solid;
+  border color: #fff;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+.warta {
+  width:800px;
+  margin:0 auto;
+}
+.nav1{
+  justify-content:flex-end;
+}
+.mr-t {
+  margin-top: 150px;
+}

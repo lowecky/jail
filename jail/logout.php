@@ -16,10 +16,6 @@ session_destroy();
 <head>
 </head>
 <body>
-<?php echo $komunikat?>
+<?php echo $komunikat ?>
 </body>
 </html>
-
-<?php
-header('location: login.php');
-?>
