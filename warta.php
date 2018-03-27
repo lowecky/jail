@@ -36,15 +36,15 @@
               <li class="nav-item active">
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+              </li>
               <div class="xD">
               <li class="nav-item">
                     <a class="nav1 nav-link">Witaj:   <?php
                     session_start();
                       echo $_SESSION['nazwa'];
                       ?></a>
-                      <li>
-              <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
-                      </li>
                     </div>
               </li>
           </ul>
@@ -57,23 +57,25 @@
 
       var target = new Date();
       target.setHours(target.getHours() + 6);
-
+      var now = new Date();
+      var end = new Date();
+      end.setMinutes(0);
+      end.setSeconds(0);
+      while (end.getHours() % 6 != 0) {
+        end.setHours(end.getHours()+1)
+      }
+      console.log(end);
       var x = setInterval(function() {
+        now = new Date();
 
-        var now = new Date().getTime();
-
-
-        var distance = target - now;
-
+        var distance = end - now;
 
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-
         document.getElementById("demo").innerHTML = hours + "h "
         + minutes + "m " + seconds + "s";
-
 
         if (distance < 0) {
             clearInterval(x);

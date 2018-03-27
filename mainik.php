@@ -46,6 +46,9 @@ if(isset($_POST['search'])){
 
 <html lang="en">
 <head>
+  <?php
+   //echo "   ".$_POST['login'];
+   ?>
   <meta charset="utf-8">
   <link rel="Shortcut icon" href="https://image.ibb.co/nG90QG/logo.png" />
   <title>Strona Główna</title>
@@ -75,14 +78,14 @@ if(isset($_POST['search'])){
               <li class="nav-item">
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+              </li>
             <li class="nav-item">
                   <a class="nav1 nav-link">Witaj:   <?php
                     echo $_SESSION['nazwa'];
                     ?></a>
-                    </li>
-                    <li>
-            <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
-                    </li>
+            </li>
           </ul>
       </div>
   </nav>
@@ -123,7 +126,7 @@ if(isset($_POST['search'])){
           echo'<div class="card-body text-center">';
 
             echo'<h4 class="card-title">'.'<strong>'. $results['imie'] . ' ' . $results['nazwisko'] .'</strong>'.'</h4>';
-            echo'<h5>' . 'wiek: ' .  $results['wiek'] .  '</h5>';
+            echo'<h5>' . 'wiek: ' .  $results['wiek'] . '</h5>';
 
             echo  '<p class="card-text">' . '<strong>' . 'wyrok: ' . '</strong>' . $results['wyrok'] . '</p>';
 

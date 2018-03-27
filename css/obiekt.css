@@ -3,34 +3,27 @@ body{
 
 width: 100%;
 height: 100%;
+margin: 0px;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 /*background-color:#112233;*/
 }
-
-.zadyma{
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
-  display: flex;
+.container{
   justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+.errorMessage {
+  justify-content: center;
+  display: flex;
   align-items: center;
 }
-.zadyma img {
-  width: 10%;
-  height: 10%;
-  fill: black;
+ul {
+  list-style-type: none;
 }
-.obiekt{
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+li {
+    padding: 10px;
 }
-.obiekt img {
-  width: 50%;
-  height: 50%;
-  border: solid;
-  border-color: white;
-  border-radius: 10px;
+select {
+  padding-bottom: 2px;
 }
