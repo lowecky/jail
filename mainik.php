@@ -68,27 +68,30 @@ if(isset($_POST['search'])){
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="obiekt.php">Obiekt</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="pomoc.php">Dodaj więźnia</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="warta.php">Warta</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.paypal.me/arek2597">Wesprzyj nas</a>
-              </li>
+        <ul class="navbar-nav">
             <li class="nav-item">
-                  <a class="nav1 nav-link">Witaj:   <?php
-                    echo $_SESSION['nazwa'];
-                    ?></a>
+                <a class="nav-link" href="obiekt.php">Obiekt</a>
             </li>
-          </ul>
-      </div>
-  </nav>
+            <li class="nav-item">
+                <a class="nav-link" href="pomoc.php">Dodaj więźnia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="warta.php">Warta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.paypal.me/arek2597">Wesprzyj nas</a><!--link needs details -->
+            </li>
+          <li class="nav-item">
+                <a class="nav1 nav-link">Witaj:   <?php
+                  echo $_SESSION['nazwa'];
+                  ?></a>
+                  </li>
+                  <li>
+          <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
+                  </li>
+        </ul>
+    </div>
+</nav>
 
 <!-- <div class="zadyma">
       <img src="logo.png">

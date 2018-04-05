@@ -91,8 +91,10 @@ if(isset($_POST['cela'])){
                       session_start();
                       echo $_SESSION['nazwa'];
 
-                      ?>
-                    </a>
+                      ?></a>
+              </li>
+              <li class "nav-item">
+                <a class="nav1 nav-link" href="logout.php">Wyloguj się</a>
               </li>
           </ul>
       </div>
