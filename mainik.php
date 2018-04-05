@@ -79,7 +79,7 @@ if(isset($_POST['search'])){
                   <a class="nav-link" href="warta.php">Warta</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://www.paypal.me/arek2597">Donate to our prison</a>
+                  <a class="nav-link" href="https://www.paypal.me/arek2597">Wesprzyj nas</a>
               </li>
             <li class="nav-item">
                   <a class="nav1 nav-link">Witaj:   <?php
